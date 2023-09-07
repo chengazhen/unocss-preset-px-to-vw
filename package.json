@@ -1,0 +1,12 @@
+{
+  "name": "@unocss/present-px-to-vw",
+  "version": "1.0.0",
+  "description": "px to vw",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "azhen",
+  "license": "ISC"
+}
