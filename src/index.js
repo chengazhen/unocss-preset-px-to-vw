@@ -6,11 +6,11 @@ const defaultOptoins = {
   propList: ['*'],
   viewportUnit: 'vw',
   minPixelValue: 1,
-  exclude: undefined,
-  include: undefined,
 }
 
 export default function pxToVwPreset(options = defaultOptoins) {
+  options = { ...defaultOptoins, ...options }
+
   return {
     name: '@unocss/preset-px-to-vw',
     postprocess: (util) => {
@@ -20,8 +20,6 @@ export default function pxToVwPreset(options = defaultOptoins) {
         if (typeof value === 'string' && pxToVwRE.test(value))
           i[1] = value.replace(pxToVwRE, pxReplace);
       });
-
-      console.log(util.entries);
     },
   };
 }
