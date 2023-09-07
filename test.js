@@ -1,4 +1,4 @@
-import pxToVwPreset from './index.js'
+import pxToVwPreset from './src/index.js'
 
 const func = pxToVwPreset()
 

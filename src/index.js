@@ -1,20 +1,13 @@
 const pxToVwRE = /(-?[\.\d]+)px/g;
+
 const defaultOptoins = {
-  unitToConvert: 'px',
-  viewportWidth: 320,
-  unitPrecision: 5,
+  viewportWidth: 375,
+  unitPrecision: 3,
   propList: ['*'],
   viewportUnit: 'vw',
-  fontViewportUnit: 'vw',
-  selectorBlackList: [],
   minPixelValue: 1,
-  mediaQuery: false,
-  replace: true,
   exclude: undefined,
   include: undefined,
-  landscape: false,
-  landscapeUnit: 'vw',
-  landscapeWidth: 568
 }
 
 export default function pxToVwPreset(options = defaultOptoins) {
