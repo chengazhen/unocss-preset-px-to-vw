@@ -17,6 +17,8 @@
   "types": "./dist/index.d.ts",
   "devDependencies": {
     "@unocss/core": "^0.55.7",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
     "vitest": "^0.34.3"
   }
 }

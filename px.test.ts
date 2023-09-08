@@ -19,7 +19,7 @@ test('pass', async () => {
   expect(css).toContain('4.267vw')
 })
 
-test('not pass', async () => {
+test.fails('not pass', async () => {
   expect(css).toContain('16px')
 })
 

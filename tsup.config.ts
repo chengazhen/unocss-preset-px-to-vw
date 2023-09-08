@@ -5,6 +5,12 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
-  dts: true,
-  format: ['esm', 'cjs', 'iife'],
+  dts: {
+    resolve: true,
+    entry: "./src/index.ts",
+    compilerOptions: {
+      moduleResolution: "node",
+    }
+  },
+  format: ['esm', 'cjs'],
 })
