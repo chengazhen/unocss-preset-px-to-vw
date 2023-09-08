@@ -25,8 +25,6 @@ export default function pxToVwPreset(options: Partial<PxToVwOptions> = defaultOp
       util.entries.forEach((i) => {
         const value = i[1];
         if (typeof value === 'string' && pxToVwRE.test(value)) {
-          console.log(value);
-          
           i[1] = value.replace(pxToVwRE, pxReplace);
         }
       });
