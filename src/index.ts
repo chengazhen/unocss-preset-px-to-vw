@@ -36,7 +36,8 @@ function createPxReplace(opts: PxToVwOptions) {
   return function (m: string, $1: string) {
     if (!$1) return m;
     const pixels = parseFloat($1);
-    if (pixels <= opts.minPixelValue) return m;
+    // 使用绝对值来避免负值被判断为小于 minPixelValue
+    if (Math.abs(pixels) <= opts.minPixelValue) return m;
     const parsedVal = toFixed((pixels / opts.viewportWidth * 100), opts.unitPrecision);
     return parsedVal === 0 ? '0' : parsedVal + opts.viewportUnit;
   };
