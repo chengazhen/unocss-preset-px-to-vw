@@ -1,8 +1,8 @@
 {
   "private": false,
-  "name": "unocss-preset-px-to-vw",
+  "name": "unocss-preset-px-to-viewport",
   "version": "1.0.0",
-  "description": "px to vw",
+  "description": "A preset like postcss-px-to-viewport",
   "main": "./src/index.js",
   "type": "module",
   "scripts": {
