@@ -17,17 +17,18 @@
   "types": "./dist/index.d.ts",
   "devDependencies": {
     "@unocss/core": "^0.55.7",
+    "@unocss/preset-mini": "^0.55.7",
+    "@unocss/preset-rem-to-px": "^0.55.7",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.3"
   },
   "homepage": "https://github.com/chengchongzhen/present-px-to-vw",
   "repository": "https://github.com/chengchongzhen/present-px-to-vw",
-  "exports":{
+  "exports": {
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   }
-
 }

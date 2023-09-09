@@ -4,6 +4,12 @@ devDependencies:
   '@unocss/core':
     specifier: ^0.55.7
     version: 0.55.7
+  '@unocss/preset-mini':
+    specifier: ^0.55.7
+    version: 0.55.7
+  '@unocss/preset-rem-to-px':
+    specifier: ^0.55.7
+    version: 0.55.7
   tsup:
     specifier: ^7.2.0
     version: 7.2.0(typescript@5.2.2)
@@ -292,6 +298,25 @@ packages:
 
   /@unocss/core@0.55.7:
     resolution: {integrity: sha512-c+bWe844Xjlwc1EPwHj0+n3LpntJG7ELPbEOOxNIG+CQdcEX0l1G0rkM8+nKstJ9WJmgpf1HdJQLVMF62HXvhw==}
+    dev: true
+
+  /@unocss/extractor-arbitrary-variants@0.55.7:
+    resolution: {integrity: sha512-imK2g/frlo5Ag0uVB+C/Psyo5+9AnqhoRAgYa6gyrQ/TJnrnwf+M3jFngU9evIMHw92vig1DGfPa2ZId901DwQ==}
+    dependencies:
+      '@unocss/core': 0.55.7
+    dev: true
+
+  /@unocss/preset-mini@0.55.7:
+    resolution: {integrity: sha512-ZCskE2uprjGkpQezEPM6KPMf84rIZEUNc1p2DxWVHaFUPRV24/JSNsO4PsKrQgNIb2dLQxzPNlMzQJI7ssdBXQ==}
+    dependencies:
+      '@unocss/core': 0.55.7
+      '@unocss/extractor-arbitrary-variants': 0.55.7
+    dev: true
+
+  /@unocss/preset-rem-to-px@0.55.7:
+    resolution: {integrity: sha512-aGSOFivnKwyDdW4Z9dVJuAy7pi2KffmV8oSnuKiPG5B/mT1YluicCRKniDRR/5Km8kkdhjsV/yzqGPaWIOiJhQ==}
+    dependencies:
+      '@unocss/core': 0.55.7
     dev: true
 
   /@vitest/expect@0.34.3:
