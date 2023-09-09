@@ -22,5 +22,12 @@
     "vitest": "^0.34.3"
   },
   "homepage": "https://github.com/chengchongzhen/present-px-to-vw",
-  "repository": "https://github.com/chengchongzhen/present-px-to-vw"
+  "repository": "https://github.com/chengchongzhen/present-px-to-vw",
+  "exports":{
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  }
+
 }
