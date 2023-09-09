@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest -u",
-    "build": "tsup "
+    "build": "tsup"
   },
   "author": "azhen",
   "license": "ISC",

@@ -13,4 +13,5 @@ export default defineConfig({
     }
   },
   format: ['esm', 'cjs'],
+  external:['@unocss/core']
 })
