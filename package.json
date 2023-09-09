@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "unocss-present-px-to-vw",
-  "version": "1.0.1",
+  "name": "unocss-preset-px-to-vw",
+  "version": "1.0.0",
   "description": "px to vw",
   "main": "./src/index.js",
   "type": "module",
