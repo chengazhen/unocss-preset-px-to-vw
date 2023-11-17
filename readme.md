@@ -12,7 +12,7 @@ interface PxToVwOptions {
 // uno.config.ts
 import { defineConfig } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
-import presetPxTovw from 'unocss-present-px-to-vw'
+import presetPxTovw from 'unocss-preset-px-to-viewport'
 
 export default defineConfig({
   presets: [
